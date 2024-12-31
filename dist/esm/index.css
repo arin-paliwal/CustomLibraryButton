@@ -1,0 +1,2 @@
+button{border-radius:.75rem;border-width:1px;padding:.25rem 1rem;text-align:center;transition-duration:.3s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}button:hover{box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.6);filter:brightness(1.25)}button:disabled{background-color:#737373;border-color:#737373;color:#e5e5e5;cursor:not-allowed}
+/*# sourceMappingURL=index.css.map */
