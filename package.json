@@ -44,5 +44,9 @@
     "storybook": "^8.4.7",
     "tslib": "^2.8.1",
     "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   }
 }
