@@ -2818,7 +2818,7 @@ function requireJsxRuntime () {
 	return jsxRuntime.exports;
 }
 
-requireJsxRuntime();
+var jsxRuntimeExports = requireJsxRuntime();
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
@@ -2849,4 +2849,30 @@ function styleInject(css, ref) {
 
 var css_248z = "button{\r\n    padding-top: 0.25rem;\r\n    padding-bottom: 0.25rem;\r\n    padding-left: 1rem;\r\n    padding-right: 1rem;\r\n    border-width:1px;\r\n    border-radius: 0.75rem;\r\n    text-align: center;\r\n    transition-property: all;\r\n    transition-timing-function: cubic-bezier(0.4,0,0.2,1);\r\n    transition-duration: 300ms;\r\n}\r\n\r\nbutton:hover{\r\n    filter:brightness(1.25);\r\n    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.6);\r\n}\r\n\r\nbutton:disabled{\r\n    background-color: #737373;\r\n    border-color: #737373;\r\n    color:#e5e5e5;\r\n    cursor: not-allowed;\r\n}";
 styleInject(css_248z);
+
+const Button = ({ variant, ...props }) => {
+    const styles = () => {
+        const propStyle = props.style ?? {};
+        if (props.disabled)
+            return propStyle;
+        if (variant === 'primary')
+            return {
+                borderColor: '#6366F1',
+                backgroundColor: '#6366F1',
+                color: '#FAFAFA',
+                ...propStyle
+            };
+        if (variant === 'secondary')
+            return {
+                borderColor: '#6366F1',
+                backgroundColor: '#FAFAFA',
+                color: '#6366F1',
+                ...propStyle
+            };
+        return propStyle;
+    };
+    return (jsxRuntimeExports.jsx("button", { ...props, style: styles(), children: props.children }));
+};
+
+exports.Button = Button;
 //# sourceMappingURL=index.js.map
