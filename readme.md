@@ -1,48 +1,29 @@
-# Custom Card UI Library
+# 🚀 Custom React Button  
 
-A modern, lightweight React component library featuring customizable card components built with TypeScript and Tailwind CSS.
+A reusable and customizable Button component created as a learning project to publish a package to the GitHub NPM Registry.  
 
-## Features
+## 📦 Features  
+- 🔧 **Customizable:** Tailor styles and functionality effortlessly.  
+- ⚡ **Lightweight:** Minimal and optimized for performance.  
+- 📜 **Educational:** Demonstrates publishing to the GitHub Registry.
 
-- 🎯 Modern, clean design
-- 📱 Fully responsive
-- 🎨 Customizable through Tailwind CSS
-- 💪 TypeScript support
-- 🚀 Easy to integrate
-- 🪶 Lightweight
+## 🛠️ Installation  
 
+Install the package from the GitHub NPM Registry:  
+```bash
+npm install @yourusername/your-button-package --registry=https://npm.pkg.github.com
+📋 Usage
+Import the Button component and use it in your React application:
 
-```
-custom-card-ui
-├─ .git
-├─ .github
-│  └─ workflows
-│     └─ publish.yml
-├─ .gitignore
-├─ .npmignore
-├─ .storybook
-│  ├─ main.ts
-│  └─ preview.ts
-├─ LICENSE
-├─ package-lock.json
-├─ package.json
-├─ README.md
-├─ rollup.config.js
-├─ src
-│  ├─ components
-│  │  ├─ Cards
-│  │  │  ├─ Card.css
-│  │  │  ├─ Card.tsx
-│  │  │  └─ index.ts
-│  │  └─ index.ts
-│  ├─ example
-│  │  ├─ index.html
-│  │  └─ index.tsx
-│  ├─ index.ts
-│  └─ stories
-│     └─ Card.stories.tsx
-├─ tailwind.config.js
-├─ tsconfig.json
-└─ webpack.config.js
+import Button from '@yourusername/your-button-package';
 
-```
+const App = () => (
+  <Button label="Click Me!" onClick={() => alert('Button clicked')} />
+);
+
+export default App;
+🌟 Contributing
+Feel free to submit issues or pull requests to improve the package!
+
+📄 License
+This project is licensed under the MIT License.
