@@ -1,40 +1,22 @@
 {
   "compilerOptions": {
-    /* Language and Environment */
-    "target": "esnext",
-    "jsx": "react-jsx",
-
-    /* Modules */
-    "module": "esnext",
-    "moduleResolution": "node",
-
-    /* JavaScript Support */
-    "allowJs": false,
-
-    /* Emit */
-    "declaration": true,
-    "declarationDir": "./dist/types", // Outputs declaration files here
-    "emitDeclarationOnly": false, // Emit both JS and declaration files
-    "sourceMap": true,
-    "outDir": "./dist", // Outputs JavaScript files here
-
-    /* Interop Constraints */
-    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "module": "ESNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-
-    /* Type Checking */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "allowUnreachableCode": false,
-
-    /* Completeness */
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "declarationDir": "dist/cjs/types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": false,
+    "typeRoots": ["node_modules/@types", "src/global.d.ts"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx", "**/*.stories.ts"]
+  "exclude": ["node_modules", "dist"]
 }

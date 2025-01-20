@@ -1,8 +1,18 @@
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary';
+interface Props {
+    children: ReactNode | ReactNode[];
+    className?: string;
+    style?: React.CSSProperties;
+    backgroundColor?: string;
+    borderRadius?: string;
+    padding?: string;
+    shadow?: string;
+    hoverShadow?: string;
+    border?: string;
+    transitionDuration?: string;
+    onClick?: () => void;
 }
-declare const Button: FC<ButtonProps>;
+declare const Button: FC<Props>;
 
 export { Button };

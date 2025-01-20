@@ -1,3 +1,48 @@
-# React Component Library
+# Custom Card UI Library
 
-## This is a React Component Library that I created to help me build my projects faster. It is a collection of components that I have created and used in my projects. I have also included some components that I have found useful from other libraries.
+A modern, lightweight React component library featuring customizable card components built with TypeScript and Tailwind CSS.
+
+## Features
+
+- 🎯 Modern, clean design
+- 📱 Fully responsive
+- 🎨 Customizable through Tailwind CSS
+- 💪 TypeScript support
+- 🚀 Easy to integrate
+- 🪶 Lightweight
+
+
+```
+custom-card-ui
+├─ .git
+├─ .github
+│  └─ workflows
+│     └─ publish.yml
+├─ .gitignore
+├─ .npmignore
+├─ .storybook
+│  ├─ main.ts
+│  └─ preview.ts
+├─ LICENSE
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ rollup.config.js
+├─ src
+│  ├─ components
+│  │  ├─ Cards
+│  │  │  ├─ Card.css
+│  │  │  ├─ Card.tsx
+│  │  │  └─ index.ts
+│  │  └─ index.ts
+│  ├─ example
+│  │  ├─ index.html
+│  │  └─ index.tsx
+│  ├─ index.ts
+│  └─ stories
+│     └─ Card.stories.tsx
+├─ tailwind.config.js
+├─ tsconfig.json
+└─ webpack.config.js
+
+```

@@ -1,0 +1,19 @@
+.custom-button {
+  background-color: var(--button-bg-color, #4caf50);
+  border-radius: var(--button-border-radius, 0.5rem);
+  box-shadow: var(--button-shadow, 0 4px 8px rgba(0, 0, 0, 0.1));
+  padding: var(--button-padding, 1rem 2rem);
+  border: var(--button-border, none);
+  cursor: pointer;
+  transition: box-shadow var(--button-transition-duration, 300ms),
+    transform 150ms ease;
+}
+
+.custom-button:hover {
+  box-shadow: var(--button-hover-shadow, 0 6px 12px rgba(0, 0, 0, 0.15));
+  transform: translateY(-2px);
+}
+
+.custom-button:active {
+  transform: translateY(1px);
+}
